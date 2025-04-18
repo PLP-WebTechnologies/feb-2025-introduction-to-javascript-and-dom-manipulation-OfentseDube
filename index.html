@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Dube Projects</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="rain" id="rain"></div>
+    <div class="content-container">
+        <h1>Sir Dube Projects</h1>
+        <p>"Empowering Communities Through Clean Water."</p>
+
+        <h2>Ordered List of Project Steps</h2>
+        <ol type="I">
+            <li>Community Assessment</li>
+            <li>Site Selection and Planning</li>
+            <li>Equipment Procurement</li>
+            <li>Installation and Setup</li>
+            <li>Training and Maintenance</li>
+        </ol>
+
+        <h2>Image of Clean Water Source</h2>
+        <img src="Images/pexels-tasveerwala-2837863.jpg" alt="Clean Water Source" width="300"height=200>
+        <img src="Images/pexels-theplanetspeaks-12726229.jpg" alt="Clean Water Source" width="300"height=200>
+        <img src="Images/Picture1.jpg" alt="Clean Water Source" width="300"height=200>
+
+        <h2>Project Video</h2>
+        <video width="640" height="360" controls>
+            <source src="videos/12226014_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Contact Information</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, Pretoria</td>
+                    <td>082 123 4567</td>
+                    <td>john.doe@outlook.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Ave, Pretoria</td>
+                    <td>083 987 6543</td>
+                    <td>jane.smith@icloud.com</td>
+                </tr>
+                <tr>
+                    <td>David Lee</td>
+                    <td>789 Pine Ln, Pretoria</td>
+                    <td>084 111 2222</td>
+                    <td>david.lee@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Jones</td>
+                    <td>101 Maple Rd, Pretoria</td>
+                    <td>085 333 4444</td>
+                    <td>sarah.jones@outlook.com</td>
+                </tr>
+                <tr>
+                     <td>Robert Brown</td>
+                     <td>202 Cedar Ct, Pretoria</td>
+                     <td>086 555 6666</td>
+                     <td>robert.brown@yahoo.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Registration Form</h2>
+        <form action="/register" method="post">
+            <fieldset>
+                <legend>User Registration</legend>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="waterSource">Preferred Water Source:</label><br>
+                <select id="waterSource" name="waterSource">
+                    <option value="borehole">Borehole</option>
+                    <option value="river">River</option>
+                    <option value="dam">Dam</option>
+                </select><br><br>
+
+                <p>Water Usage:</p>
+                <input type="radio" id="residential" name="usage" value="residential">
+                <label for="residential">Residential</label><br>
+                <input type="radio" id="commercial" name="usage" value="commercial">
+                <label for="commercial">Commercial</label><br>
+                <input type="radio" id="agricultural" name="usage" value="agricultural">
+                <label for="agricultural">Agricultural</label><br><br>
+
+                <p>Services Interested In:</p>
+                <input type="checkbox" id="installation" name="services" value="installation">
+                <label for="installation">Installation</label><br>
+                <input type="checkbox" id="maintenance" name="services" value="maintenance">
+                <label for="maintenance">Maintenance</label><br>
+                <input type="checkbox" id="training" name="services" value="training">
+                <label for="training">Training</label><br><br>
+
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
